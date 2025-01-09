@@ -1,5 +1,5 @@
 const { merge: mergeDev } = require('webpack-merge');
-const commonConfigDev = require('./webpack.common');
+const commonConfigDev = require('./webpack.common.ts');
 const pathDev = require('path');
 
 const devConfig = {
