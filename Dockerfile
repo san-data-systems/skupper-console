@@ -11,15 +11,16 @@ COPY package.json yarn.lock ./
 RUN yarn install
 
 # Copy the rest of the application
-COPY . .
+COPY . ./
 
-# Expose the desired port (default for many web apps is 3000)
+# Ensure TypeScript files are compiled (if applicable)
+RUN yarn ts-check
+
+# Expose the desired port
 EXPOSE 3000
 
 # Environment variable for COLLECTOR_URL
-# This will be set at runtime using the `docker run` or `docker-compose` command.
 ENV COLLECTOR_URL=""
 
 # Command to start the application
-# Pass the COLLECTOR_URL dynamically using environment variables
 CMD ["sh", "-c", "COLLECTOR_URL=$COLLECTOR_URL yarn start"]
