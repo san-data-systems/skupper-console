@@ -19,8 +19,8 @@ RUN yarn ts-check
 # Expose the desired port
 EXPOSE 3000
 
-# Environment variable for COLLECTOR_URL
-ENV COLLECTOR_URL=""
+# Environment variable for OBSERVER_URL
+ENV OBSERVER_URL=""
 
 # Command to start the application
-CMD ["sh", "-c", "COLLECTOR_URL=$COLLECTOR_URL yarn start"]
+CMD ["sh", "-c", "OBSERVER_URL=$OBSERVER_URL yarn start"]
