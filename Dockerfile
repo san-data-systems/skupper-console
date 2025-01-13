@@ -13,9 +13,6 @@ RUN yarn install
 # Copy the rest of the application
 COPY . ./
 
-# Ensure TypeScript files are compiled (if applicable)
-RUN yarn ts-check
-
 # Expose the desired port
 EXPOSE 3000
 
