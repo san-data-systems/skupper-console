@@ -1,4 +1,4 @@
-import Logo from '../assets/skupper-logo.svg';
+import Logo from '../assets/logo.png';
 
 /** Brand */
 export const brandLogo = process.env.BRAND_APP_LOGO?.split('/').pop() || Logo;
