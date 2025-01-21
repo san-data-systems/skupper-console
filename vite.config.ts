@@ -16,7 +16,10 @@ export default defineConfig(() => ({
   base: './',
 
   server: {
-    port: 3000
+    port: 3000,
+    watch: {
+      usePolling: true
+    }
   },
 
   test: {
