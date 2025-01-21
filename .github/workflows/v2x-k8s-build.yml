@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: . # Path to your Dockerfile
-          file: ./Dockerfile.prod
+          file: ./Dockerfile
           tags: |
             devsds/skupper-v2x-k8s-console:${{ github.sha }}
             devsds/skupper-v2x-k8s-console:latest
