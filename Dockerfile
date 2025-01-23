@@ -19,5 +19,8 @@ EXPOSE 3000
 # Environment variable for OBSERVER_URL
 ENV OBSERVER_URL=""
 
+# Environment variable for API_VERSION
+ENV API_VERSION=""
+
 # Command to start the application
-CMD ["sh", "-c", "OBSERVER_URL=$OBSERVER_URL yarn start"]
+CMD ["sh", "-c", "OBSERVER_URL=$OBSERVER_URL API_VERSION=$API_VERSION yarn start"]
