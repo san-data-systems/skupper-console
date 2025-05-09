@@ -35,7 +35,7 @@ export enum HeaderLabels {
 const SkHeader = function () {
   return (
     <Masthead className="sk-header" data-testid="sk-header">
-      <MastheadMain>
+      {/* <MastheadMain>
         <MastheadToggle>
           <PageToggleButton variant="plain">
             <BarsIcon />
@@ -46,9 +46,9 @@ const SkHeader = function () {
             <Brand src={brandLogo} alt="logo" heights={{ default: '45px' }} />
           </MastheadLogo>
         </MastheadBrand>
-      </MastheadMain>
+      </MastheadMain> */}
 
-      <MastheadContent>
+      {/* <MastheadContent>
         <Toolbar isFullHeight>
           <ToolbarContent>
             <ToolbarGroup align={{ default: 'alignEnd' }} gap={{ default: 'gapMd' }}>
@@ -60,7 +60,7 @@ const SkHeader = function () {
             </ToolbarGroup>
           </ToolbarContent>
         </Toolbar>
-      </MastheadContent>
+      </MastheadContent> */}
     </Masthead>
   );
 };
